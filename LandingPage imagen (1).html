@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi información</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+        header, section, footer {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi información</h1>
+    </header>
+    
+    <section>
+        <h2>Información personal</h2>
+        <form action="pagina_agradecimiento.html" method="get" enctype="multipart/form-data">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula"><br><br>
+            
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+            
+            <label for="lugar_nacimiento">Lugar de nacimiento:</label>
+            <select id="lugar_nacimiento" name="lugar_nacimiento">
+                <option value="Ciudad De Panama" selected>Panamá</option>
+                <option value="Panama Oeste" selected>Panamá</option>
+                <option value="Colon" selected>Panamá</option>
+                <option value="Veraguas" selected>Panamá</option>
+                <option value="Bocas del Toro" selected>Panamá</option>
+                <option value="Darien" selected>Panamá</option>
+                <option value="Cocle" selected>Panamá</option>
+                <option value="Chiriqui" selected>Panamá</option>
+                <option value="Otro">Otro</option>
+            </select><br><br>
+            
+            <label for="imagen">Adjuntar imagen:</label>
+            <input type="file" id="imagen" name="imagen"><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    
+    <section>
+        <h2>Información del curso</h2>
+        <form action="pagina_agradecimiento.html" method="get">
+            <label for="facultad">Facultad:</label><br>
+            <input type="radio" id="facultad" name="facultad" value="Facultad de Ingeniería">Facultad de Ingeniería<br>
+            <input type="radio" id="facultad" name="facultad" value="Facultad de Ciencias">Facultad de Ciencias<br>
+            <input type="radio" id="facultad" name="facultad" value="Facultad de Humanidades">Facultad de Humanidades<br><br>
+            
+            <label for="temas_interes">Temas de interés:</label><br>
+            <input type="checkbox" id="programacion" name="temas_interes" value="Programación">Programación<br>
+            <input type="checkbox" id="diseno_arte" name="temas_interes" value="Diseño y Arte">Diseño y Arte<br>
+            <input type="checkbox" id="tecnologias_red" name="temas_interes" value="Tecnologías para conectividad en la Red">Tecnologías para conectividad en la Red<br>
+            <input type="checkbox" id="investigacion_innovacion" name="temas_interes" value="Investigación e Innovación">Investigación e Innovación<br><br>
+            
+            <label for="experiencia_programacion">Experiencia en programación:</label><br>
+            <textarea id="experiencia_programacion" name="experiencia_programacion"></textarea><br><br>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Información de Salud</h2>
+        <form action="pagina_agradecimiento.html" method="get">
+            <label for="peso">Peso:</label>
+            <input type="range" id="peso" name="peso" min="0" max="100" step="1" value="50"><br><br>
+            
+            <label for="altura">Altura:</label>
+            <input type="range" id="altura" name="altura" min="0" max="3" step="0.01" value="1.50"><br><br>
+            
+            <label for="alergias">Alergias:</label><br>
+            <input type="checkbox" id="rinitis" name="alergias" value="Rinitis">Rinitis<br>
+            <input type="checkbox" id="asma" name="alergias" value="Asma">Asma<br>
+            <input type="checkbox" id="lactosa" name="alergias" value="Lactosa">Lactosa<br>
+            <input type="checkbox" id="medicamentos" name="alergias" value="Medicamentos">Medicamentos, especificar:<br>
+            <textarea id="medicamentos_especificar" name="medicamentos_especificar"></textarea><br>
+            <input type="checkbox" id="otro" name="alergias" value="Otro">Otro, especificar:<br>
+            <textarea id="otro_especificar" name="otro_especificar"></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2024 todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
+
+    
+   
